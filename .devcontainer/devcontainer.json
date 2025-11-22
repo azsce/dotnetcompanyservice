@@ -1,0 +1,22 @@
+{
+  "name": "C# (.NET) API Service",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "forwardPorts": [8080, 8081],
+  "portsAttributes": {
+    "8081": {
+      "protocol": "https"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+  "remoteUser": "vscode"
+}
